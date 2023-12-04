@@ -36,10 +36,23 @@ header{ /*Viktor*/
 
 
 .nyhetsbrev{ /*en klass till varje body på de olika sidtyperna. för gridlayout*/
-
 }
 
 .omoss{ /*en klass till varje body på de olika sidtyperna. för gridlayout*/
+    display:grid; /*Viktor*/
+    grid-template-columns: 1fr 1fr 1fr; /*adam*/
+    grid-template-rows: 130px auto 80px;/*adam*/ 
+    grid-template-areas:/*adam*/
+    header/*adam*/
+    nav/*adam*/
+    main/*adam*/
+    footer/*adam*/
+}
+
+.omoss main{   /*Main avkomling till .omoss . För att main ska ta upp varsin del av body*/ /*adam*/
+    display: grid; /*adam*/
+    grid-column: 1/4; /*adam*/
+    grid-template-columns: 1fr 1fr; /*adam*/
 }
 
 .djurmall{ /*en klass till varje body på de olika sidtyperna. för gridlayout*/
