@@ -1,32 +1,31 @@
-.logo{
-    width: 50px;
-    
+.logo{ /*Viktor*/
+    width: 50px; /*Viktor*/
+} /*Viktor*/
+
+body{ /*Viktor*/
+    display:grid; /*Viktor*/
+    grid-template-columns: 1fr 1fr 1fr; /*Viktor*/
+    grid-template-rows: 100px 80px auto 80px; /*Viktor*/
+    grid-template-areas: /*Viktor*/
+    header nav nav /*Viktor*/
+    dropdown dropdown dropdown /*Viktor*/
+    main main main /*Viktor*/
+    footer footer footer; /*Viktor*/
+} /*Viktor*/
+
+.pagenav{ /*Viktor*/
+    grid-column: 2 / span2; /*Viktor*/
+    grid-row: 1; /*Viktor*/
 }
 
-body{
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 100px 80px auto 80px;
-    grid-template-areas:
-    header nav nav
-    dropdown dropdown dropdown
-    main main main
-    footer footer footer
+header{ /*Viktor*/
+    grid-column: 1; /*Viktor*/
+    grid-row: 1; /*Viktor*/
 }
 
-.pagenav{
-    grid-column: 2 / span2;
-    grid-row: 1;
-}
-
-header{
-    grid-column: 1;
-    grid-row: 1;
-}
-
-.dropdown{
-    grid-column: 1 / span3;
-    grid-row: 2;
+.dropdown{ /*Viktor*/
+    grid-column: 1 / span3; /*Viktor*/
+    grid-row: 2; /*Viktor*/ 
 }
 
 .index{ /*en klass till varje body på de olika sidtyperna. för gridlayout*/
