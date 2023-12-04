@@ -3,7 +3,7 @@
 } /*Viktor*/
 
 body{ /*Viktor*/
-    display:grid; /*Viktor*/
+    display:grid; /*skapar ett gridsystem till hela bodyn*//*Viktor*/
     grid-template-columns: 1fr 1fr 1fr; /*Viktor*/
     grid-template-rows: 100px 80px auto 80px; /*Viktor*/
     grid-template-areas: /*Viktor*/
@@ -14,22 +14,25 @@ body{ /*Viktor*/
 } /*Viktor*/
 
 .pagenav{ /*Viktor*/
-    grid-column: 2 / span2; /*Viktor*/
-    grid-row: 1; /*Viktor*/
+    grid-column: 2 / span2; /*placerar sidnavigeringen i rätt gridruta i bodygriden*/ /*Viktor*/
+    grid-row: 1; /*placerar sidnavigeringen i rätt gridruta i bodygriden*/ /*Viktor*/
 }
 
 header{ /*Viktor*/
-    grid-column: 1; /*Viktor*/
-    grid-row: 1; /*Viktor*/
+    grid-column: 1; /*placerar headern i rätt gridruta i bodygriden*/ /*Viktor*/
+    grid-row: 1; /*placerar dropdownen i rätt gridruta i bodygriden*/ /*Viktor*/
 }
 
 .dropdown{ /*Viktor*/
-    grid-column: 1 / span3; /*Viktor*/
-    grid-row: 2; /*Viktor*/ 
+    grid-column: 1 / span3; /*placerar dropdownen i rätt gridruta i bodygriden*/ /*Viktor*/
+    grid-row: 2; /*placerar dropdownen i rätt gridruta i bodygriden*/ /*Viktor*/ 
 }
 
-.index{ /*en klass till varje body på de olika sidtyperna. för gridlayout*/
-    
+.index main{ /*en klass till varje body på de olika sidtyperna. för gridlayout*/ /*Viktor*/ 
+    grid-row: 3; /*placerar main i rätt gridruta i bodygriden*/ /*Viktor*/ 
+    grid-column: 1 / span3; /*placerar main i rätt gridruta i bodygriden*/ /*Viktor*/ 
+    display: grid; /*gör ett gridsystem i main med 2 kolumner*/ /*Viktor*/ 
+    grid-template-columns: 1fr 1fr; /*gör ett gridsystem i main med 2 kolumner*/ /*Viktor*/ 
 }
 
 
