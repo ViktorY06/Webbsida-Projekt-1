@@ -1,6 +1,22 @@
-.logo{ /*Viktor*/
+.index .logo{ /*Viktor*/ /*anledningen till 3 likadana är att selektorn för bilderna i index fick en högre specifikation vilket ledde till att loggan blev för stor*/
     width: 50px; /*Viktor*/
-} /*Viktor*/
+}
+
+.omoss .logo{ /*Viktor*/
+    width: 50px; /*Viktor*/
+}
+
+.nyhetsbrev .logo{ /*Viktor*/
+    width: 50px; /*Viktor*/
+}
+
+li{ /*tar bort punkten innan listorna*/ /*Viktor*/
+    list-style-type: none;
+}
+
+ul{ /*tar bort paddingen i ul*/
+    padding: 0;
+}
 
 body{ /*Viktor*/
     display:grid; /*skapar ett gridsystem till hela bodyn*//*Viktor*/
@@ -11,6 +27,7 @@ body{ /*Viktor*/
     dropdown dropdown dropdown /*Viktor*/
     main main main /*Viktor*/
     footer footer footer; /*Viktor*/
+    margin: ; /*tar bort marginen runt bodyn*/
 } /*Viktor*/
 
 .pagenav{ /*Viktor*/
@@ -18,9 +35,19 @@ body{ /*Viktor*/
     grid-row: 1; /*placerar sidnavigeringen i rätt gridruta i bodygriden*/ /*Viktor*/
 }
 
+.pagenav li{ /*placerar texten i mitten av listelementen*/ /*Viktor*/
+    margin: auto;
+}
+
 header{ /*Viktor*/
     grid-column: 1; /*placerar headern i rätt gridruta i bodygriden*/ /*Viktor*/
     grid-row: 1; /*placerar dropdownen i rätt gridruta i bodygriden*/ /*Viktor*/
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+h1{
+    margin: 0;
 }
 
 .dropdown{ /*Viktor*/
@@ -32,11 +59,33 @@ header{ /*Viktor*/
     grid-row: 3; /*placerar main i rätt gridruta i bodygriden*/ /*Viktor*/ 
     grid-column: 1 / span3; /*placerar main i rätt gridruta i bodygriden*/ /*Viktor*/ 
     display: grid; /*gör ett gridsystem i main med 2 kolumner*/ /*Viktor*/ 
-    grid-template-columns: 1fr 1fr; /*gör ett gridsystem i main med 2 kolumner*/ /*Viktor*/ 
+    grid-template-columns: auto 1fr; /*gör ett gridsystem i main med 2 kolumner*/ /*Viktor*/ 
+    grid-template-rows: auto auto auto; /*gör ett gridsystem i main med 3 rader*/ /*Viktor*/ 
 }
 
+.index section :nth-child(1){ /*placerar section 1 till vänster*/ /*Viktor*/ 
+    grid-row: 1;
+    grid-column: 1;
+}
 
+.index .serval{ /*placerar bilden på kattdjur till vänster*/ /*Viktor*/ 
+    grid-row: 2;
+    grid-column: 1;
+}
 
+.index section :nth-child(2){ /*placerar section 2 till höger*/ /*Viktor*/ 
+    grid-row: 2;
+    grid-column: 2;
+}
+
+.index section :nth-child(3){ /*placerar section 3 till vänster*/ /*Viktor*/ 
+    grid-row: 3;
+    grid-column: 1;
+}
+
+.index img{ /*gör alla bilder i index hälften av viewwidth*/ /*Viktor*/ 
+    width: 49vw;
+}
 
 .nyhetsbrev{ /*en klass till varje body på de olika sidtyperna. för gridlayout*/
 }
@@ -60,4 +109,21 @@ header{ /*Viktor*/
 
 .djurmall{ /*en klass till varje body på de olika sidtyperna. för gridlayout*/
 
+}
+
+.pagenav ul { /*gör ett gridsystem i pagenav menyn*/ /*Viktor*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.pagenav li :nth-child(1){ /*placerar första listelementet först*/ /*Viktor*/
+    grid-column: 1;
+}
+
+.pagenav li :nth-child(2){ /*placerar andra listelementet på andraplats*/ /*Viktor*/
+    grid-column: 2;
+}
+
+.pagenav li :nth-child(3){ /*placerar tredje listelementet på tredjeplats*/ /*Viktor*/
+    grid-column: 3;
 }
