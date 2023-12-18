@@ -53,29 +53,41 @@ h1{
     margin: 0;
 }
 
-.dropdown{ /*Viktor*/
+.dropbtn{
+    width: 100px;
+    height: 30px;
+}
+
+.placeringdropdown{ /*Viktor*/
     grid-column: 1 / span3; /*placerar dropdownen i rätt gridruta i bodygriden*/ /*Viktor*/
     grid-row: 2; /*placerar dropdownen i rätt gridruta i bodygriden*/ /*Viktor*/ 
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    gap: 10px;
 }
 
-.dropdown-content{ /* klass för dropdown*/
-    display: none;
-    position: absolute;
+.dropdown-content{ /* klass för dropdown*/ /*adam*/
+    display: none; /*för att menyn först ska vara gömd*//*adam*/
+    position: absolute; /*adam*/
 }
 
-.dropdown-content a{
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
+.dropdown-content a{ /*a avkomling till dropdown-content, för att dekorera a*//*adam*/
+    color: black;/*adam*/
+    padding: 12px 16px;/*adam*/
+    text-decoration: none;/*adam*/
+    display: block;  /*länkarna visas på varandra inte inline *//*adam*/
 }
 
-.dropdown-content a:hover{
-    background-color: #ddd;
+.dropdown-content a:hover{  /*länkarna blir gråa när man hovrar dem*//*adam*/
+    background-color: #ddd;/*adam*/
 }
 
-.dropdown:hover .dropdown-content{
-    display: block;
+.dropdown:hover .dropdown-content{  /* när man hovrar över dropdown så visas dropdown-content*//*adam*/
+    display: block;/*adam*/
+}
+
+.dropdown{
+    width: 100px;
 }
 
 .index main{ /*en klass till varje body på de olika sidtyperna. för gridlayout*/ /*Viktor*/ 
