@@ -69,6 +69,7 @@ h1{
 .dropdown-content{ /* klass för dropdown*/ /*adam*/
     display: none; /*för att menyn först ska vara gömd*//*adam*/
     position: absolute; /*adam*/
+    background-color: white;
 }
 
 .dropdown-content a{ /*a avkomling till dropdown-content, för att dekorera a*//*adam*/
@@ -88,6 +89,7 @@ h1{
 
 .dropdown{
     width: 100px;
+    height: 30px;
 }
 
 .index main{ /*en klass till varje body på de olika sidtyperna. för gridlayout*/ /*Viktor*/ 
