@@ -83,7 +83,7 @@ h1{
 }
 
 .index img{ /*gör alla bilder i index hälften av viewwidth*/ /*Viktor*/ 
-    width: 49vw;
+    width: 50vw;
 }
 
 .nyhetsbrev{ /*en klass till varje body på de olika sidtyperna. för gridlayout*/
