@@ -10,6 +10,10 @@
     width: 50px; /*Viktor*/
 }
 
+.djurmall .logo{
+    width: 50px;
+}
+
 li{ /*tar bort punkten innan listorna*/ /*Viktor*/
     list-style-type: none;
 }
@@ -52,6 +56,26 @@ h1{
 .dropdown{ /*Viktor*/
     grid-column: 1 / span3; /*placerar dropdownen i rätt gridruta i bodygriden*/ /*Viktor*/
     grid-row: 2; /*placerar dropdownen i rätt gridruta i bodygriden*/ /*Viktor*/ 
+}
+
+.dropdown-content{ /* klass för dropdown*/
+    display: none;
+    position: absolute;
+}
+
+.dropdown-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover{
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
 }
 
 .index main{ /*en klass till varje body på de olika sidtyperna. för gridlayout*/ /*Viktor*/ 
