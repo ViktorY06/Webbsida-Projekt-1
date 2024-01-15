@@ -53,9 +53,14 @@ h1{
     margin: 0;
 }
 
-.dropbtn{
-    width: 100px;
-    height: 30px;
+a{
+    text-decoration: none;/*adam*/
+    color: black;/*adam*/
+}
+
+.dropbtn{/*adam*/
+    width: 100px;/*adam*/
+    height: 30px;/*adam*/
 }
 
 .placeringdropdown{ /*Viktor*/
@@ -147,6 +152,30 @@ h1{
 .djurmall{ /*en klass till varje body på de olika sidtyperna. för gridlayout*/
 
 }
+
+.djurmall img{/*adam*/
+    max-width: 40em;/*adam*/
+}
+
+.djurmall main{/*adam*/
+    grid-column: 2/5;/*adam*/ /*så att main tar upp resten av platsen*/
+    padding-right: 250px;/*adam*/
+}
+
+.lokalmeny{/*adam*/ /*klass för ul, för att separera från andra listor*/
+    background-color: lightgrey;/*adam*/
+    width: fit-content;/*adam*/
+    height: fit-content;/*adam*/
+    padding: 5px;/*adam*/ 
+}
+
+.lokalmeny li{/*adam*/
+    margin: 10px;/*adam*/
+}
+
+.lokalmeny a:hover{/*adam*/  /*l'nkarna blir vita när man hovrar dem*/ 
+    color: white;/*adam*/
+}/*adam*/
 
 .pagenav ul { /*gör ett gridsystem i pagenav menyn*/ /*Viktor*/
     display: grid;
