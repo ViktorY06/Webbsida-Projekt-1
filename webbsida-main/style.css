@@ -1,17 +1,27 @@
 .index .logo{ /*Viktor*/ /*anledningen till 3 likadana är att selektorn för bilderna i index fick en högre specifikation vilket ledde till att loggan blev för stor*/
-    width: 50px; /*Viktor*/
+    width: 100px; /*Viktor*/
 }
 
 .omoss .logo{ /*Viktor*/
-    width: 50px; /*Viktor*/
+    width: 100px; /*Viktor*/
 }
 
 .nyhetsbrev .logo{ /*Viktor*/
-    width: 50px; /*Viktor*/
+    width: 100px; /*Viktor*/
 }
 
-.djurmall .logo{
-    width: 50px;
+.nyhetsbrev main{/*Viktor*/
+    grid-column: 1 /span 3;
+    padding: 20px;
+}
+
+label{/*Viktor*/
+    color:rgb(255,255,255);/*Viktor*/
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;/*Viktor*/
+}
+
+.djurmall .logo{ /*Viktor, gör loggan till lagom storlek*/ 
+    width: 100px;
 }
 
 li{ /*tar bort punkten innan listorna*/ /*Viktor*/
@@ -19,18 +29,19 @@ li{ /*tar bort punkten innan listorna*/ /*Viktor*/
 }
 
 ul{ /*tar bort paddingen i ul*/
-    padding: 0;
+    padding: 0;/*Viktor*/
 }
 
 body{ /*Viktor*/
     display:grid; /*skapar ett gridsystem till hela bodyn*//*Viktor*/
     grid-template-columns: 1fr 1fr 1fr; /*Viktor*/
-    grid-template-rows: 100px 80px auto 80px; /*Viktor*/
+    grid-template-rows: 100px auto auto 80px; /*Viktor*/
     grid-template-areas: /*Viktor*/
     header nav nav /*Viktor*/
     dropdown dropdown dropdown /*Viktor*/
     main main main /*Viktor*/
     footer footer footer; /*Viktor*/
+    background-color: rgb(148, 27, 12);/*Viktor*/
 } /*Viktor*/
 
 .pagenav{ /*Viktor*/
@@ -38,24 +49,69 @@ body{ /*Viktor*/
     grid-row: 1; /*placerar sidnavigeringen i rätt gridruta i bodygriden*/ /*Viktor*/
 }
 
+footer{
+    grid-row: 4; /*Viktor*/
+    grid-column: 1 /span 3; /*Viktor*/
+    text-align: center; /*Viktor*/
+}
+
+nav, header, footer{ /*Viktor*//*design i header nav footer*/
+    background-color: rgb(148, 27, 12); /*Viktor*/
+    color:rgb(255,255,255); /*Viktor*/
+}
+
+main{ /*Viktor*//*main*/
+    background-color: rgba(188, 56, 8); /*Viktor*/
+}
+
 .pagenav li{ /*placerar texten i mitten av listelementen*/ /*Viktor*/
-    margin: auto;
+    margin: auto; /*Viktor*/
 }
 
 header{ /*Viktor*/
     grid-column: 1; /*placerar headern i rätt gridruta i bodygriden*/ /*Viktor*/
     grid-row: 1; /*placerar dropdownen i rätt gridruta i bodygriden*/ /*Viktor*/
-    display: grid;
-    grid-template-columns: auto auto;
+    display: grid; /*Viktor*/
+    grid-template-columns: auto auto; /*Viktor*/
 }
 
-h1{
-    margin: 0;
+h1{/*Viktor*/
+    margin: 0;/*Viktor*/
+    color: rgb(255, 255, 255);/*Viktor*/
+    font-size:3.9em;/*Viktor*/
+    margin-top:auto;/*Viktor*/
+    margin-bottom:auto;/*Viktor*/
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;/*Viktor*/
+}
+
+h2,h3,p{/*Viktor*/
+    color: rgb(255, 255, 255);/*Viktor*/
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;/*Viktor*/
 }
 
 a{
     text-decoration: none;/*adam*/
-    color: black;/*adam*/
+    color: rgb(255, 255, 255);/*adam*/
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;/*Viktor*/
+}
+
+a:hover{
+    color:rgb(255,173,173);/*Viktor*/
+}
+
+li{
+    color:rgb(255, 255, 255);/*Viktor*/
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;/*Viktor*/
+}
+
+button{
+    color:rgb(255, 255, 255);/*Viktor*/
+    background-color:rgba(148, 27, 12);/*Viktor*/
+    border-color:white;/*Viktor*/
+}
+
+button:hover{
+    background-color:rgb(117, 21, 8);/*Viktor*/
 }
 
 .dropbtn{/*adam*/
@@ -74,18 +130,17 @@ a{
 .dropdown-content{ /* klass för dropdown*/ /*adam*/
     display: none; /*för att menyn först ska vara gömd*//*adam*/
     position: absolute; /*adam*/
-    background-color: white;
+    background-color:rgba(148, 27, 12);
 }
 
 .dropdown-content a{ /*a avkomling till dropdown-content, för att dekorera a*//*adam*/
-    color: black;/*adam*/
     padding: 12px 16px;/*adam*/
     text-decoration: none;/*adam*/
     display: block;  /*länkarna visas på varandra inte inline *//*adam*/
 }
 
 .dropdown-content a:hover{  /*länkarna blir gråa när man hovrar dem*//*adam*/
-    background-color: #ddd;/*adam*/
+    background-color: rgb(117, 21, 8);
 }
 
 .dropdown:hover .dropdown-content{  /* när man hovrar över dropdown så visas dropdown-content*//*adam*/
@@ -129,6 +184,19 @@ a{
     width: 50vw;
 }
 
+.index section{ /*Viktor*/ /*lägger till padding runt sektionerna i index*/
+    padding: 100px;
+    padding-top: 20px;
+}
+
+.index h2{ /*Viktor*/ /*ändrar h2 storlek*/
+    font-size: 3em;
+}
+
+.index h3{ /*Viktor*/ /*ändrar h3 storlek*/
+    font-size: 2em
+}
+
 .nyhetsbrev{ /*en klass till varje body på de olika sidtyperna. för gridlayout*/
 }
 
@@ -149,10 +217,6 @@ a{
     grid-template-columns: 1fr 1fr; /*adam*/
 }
 
-.djurmall{ /*en klass till varje body på de olika sidtyperna. för gridlayout*/
-
-}
-
 .djurmall img{/*adam*/
     max-width: 40em;/*adam*/
 }
@@ -160,10 +224,11 @@ a{
 .djurmall main{/*adam*/
     grid-column: 2/5;/*adam*/ /*så att main tar upp resten av platsen*/
     padding-right: 250px;/*adam*/
+    padding-left:20px; /*Viktor*/
 }
 
 .lokalmeny{/*adam*/ /*klass för ul, för att separera från andra listor*/
-    background-color: lightgrey;/*adam*/
+    background-color: rgba(188, 57, 8, 0.9);/*Viktor*/
     width: fit-content;/*adam*/
     height: fit-content;/*adam*/
     padding: 5px;/*adam*/ 
@@ -174,7 +239,7 @@ a{
 }
 
 .lokalmeny a:hover{/*adam*/  /*l'nkarna blir vita när man hovrar dem*/ 
-    color: white;/*adam*/
+    color: rgb(255, 173, 173);/*adam*/
 }/*adam*/
 
 .pagenav ul { /*gör ett gridsystem i pagenav menyn*/ /*Viktor*/
@@ -193,3 +258,4 @@ a{
 .pagenav li :nth-child(3){ /*placerar tredje listelementet på tredjeplats*/ /*Viktor*/
     grid-column: 3;
 }
+
