@@ -223,9 +223,10 @@ button:hover{
 
 .djurmall main{/*adam*/
     grid-column: 2/5;/*adam*/ /*så att main tar upp resten av platsen*/
-    padding-right: 250px;/*adam*/
-    padding-left:20px; /*Viktor*/
+    padding-right: 20px;/*adam*/
+    padding-left: 20px; /*Viktor*/
     border-radius: 4px; /*rundar av hörnen Adam*/
+    margin-right: 750px;
 }
 
 .lokalmeny{/*adam*/ /*klass för ul, för att separera från andra listor*/
