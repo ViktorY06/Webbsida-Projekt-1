@@ -108,6 +108,7 @@ button{
     color:rgb(255, 255, 255);/*Viktor*/
     background-color:rgba(148, 27, 12);/*Viktor*/
     border-color:white;/*Viktor*/
+    border-radius: 4px; /*rundar av kanterna Adam*/
 }
 
 button:hover{
@@ -125,6 +126,7 @@ button:hover{
     display: grid;
     grid-template-columns: 100px 100px 100px;
     gap: 10px;
+    margin: 5px;
 }
 
 .dropdown-content{ /* klass för dropdown*/ /*adam*/
@@ -139,7 +141,7 @@ button:hover{
     display: block;  /*länkarna visas på varandra inte inline *//*adam*/
 }
 
-.dropdown-content a:hover{  /*länkarna blir gråa när man hovrar dem*//*adam*/
+.dropdown-content a:hover{  /*länkarna blir röda när man hovrar dem*//*adam*/
     background-color: rgb(117, 21, 8);
 }
 
@@ -197,9 +199,6 @@ button:hover{
     font-size: 2em
 }
 
-.nyhetsbrev{ /*en klass till varje body på de olika sidtyperna. för gridlayout*/
-}
-
 .omoss{ /*en klass till varje body på de olika sidtyperna. för gridlayout*/
     display:grid; /*Viktor*/
     grid-template-columns: 1fr 1fr 1fr; /*adam*/
@@ -219,12 +218,14 @@ button:hover{
 
 .djurmall img{/*adam*/
     max-width: 40em;/*adam*/
+    border-radius: 4px; /*rundar av hörnen Adam*/
 }
 
 .djurmall main{/*adam*/
     grid-column: 2/5;/*adam*/ /*så att main tar upp resten av platsen*/
     padding-right: 250px;/*adam*/
     padding-left:20px; /*Viktor*/
+    border-radius: 4px; /*rundar av hörnen Adam*/
 }
 
 .lokalmeny{/*adam*/ /*klass för ul, för att separera från andra listor*/
@@ -232,6 +233,7 @@ button:hover{
     width: fit-content;/*adam*/
     height: fit-content;/*adam*/
     padding: 5px;/*adam*/ 
+    border-radius: 4px; /*rundar av hörnen Adam*/
 }
 
 .lokalmeny li{/*adam*/
